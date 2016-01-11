@@ -32,5 +32,5 @@ Source code: [christmas_rotational_decoration.ino](https://github.com/gacarrillo
 
 [1]: https://i.vimeocdn.com/video/480687278.jpg?mw=600&mh=300
 [2]: https://i.vimeocdn.com/video/534536725_600x450.jpg
-[3]: https://i.vimeocdn.com/video/478050041_590x332.jpg
+[3]: https://github.com/gacarrillor/electronics/blob/master/imgs/IMG_3602_mod.png
 [4]: http://cdn.instructables.com/F1V/ADRQ/IFOBH6BC/F1VADRQIFOBH6BC.SMALL.jpg 
