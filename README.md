@@ -15,14 +15,14 @@ See a step-by-step explanation of this project at [Instructables](http://www.ins
 
 ![Game][3]
 
-## Whistle for a Penalty Kicks Game (2013-2014) 
+## Whistle for my Penalty Kicks Game (2013-2014) 
 Source code: [whistle_penalty_kicks.ino](https://github.com/gacarrillor/electronics/blob/master/whistle_penalty_kicks.ino)
 
 Hear the whistle at [SoundCloud](https://soundcloud.com/germap/whistle).
 
 ![Whistle][4]
 
-## Alarm Clock with Wiring (2015) 
+## Alarm Clock with Wiring (or Arduino) (2015) 
 Source code: [reloj_despertador.pde](https://github.com/gacarrillor/electronics/blob/master/reloj_despertador.pde)
 
 See a step-by-step explanation of this project at [Instructables](http://www.instructables.com/id/Alarm-clock-with-Wiring-or-Arduino/) or a video at [Vimeo](https://vimeo.com/138942370).
