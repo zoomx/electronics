@@ -2,6 +2,11 @@
   German Carrillo, Marzo de 2015
   geotux_tuxman [at] linuxmail.org
   Compartido bajo licencia GPL v.2.0
+  
+  http://www.instructables.com/id/Alarm-clock-with-Wiring-or-Arduino/
+  
+  February 2016
+  Starting italian and english translation
 */
 
 #include <LiquidCrystal.h>
@@ -58,34 +63,34 @@ const char a_1[] PROGMEM = "Una vez";
 const char a_2[] PROGMEM = "F de Se";
 const char a_3[] PROGMEM = "Diaria ";
 const char* const tiposA[] PROGMEM = {a_0, a_1, a_2, a_3};
-const char d_1[] PROGMEM = "Lunes";
+const char d_1[] PROGMEM = "Luned";  //Monday
 const char d_2[] PROGMEM = "Marte";
-const char d_3[] PROGMEM = "Mierc";
-const char d_4[] PROGMEM = "Jueve";
-const char d_5[] PROGMEM = "Viern";
-const char d_6[] PROGMEM = "Sabad";
-const char d_7[] PROGMEM = "Domin";
+const char d_3[] PROGMEM = "Merco";
+const char d_4[] PROGMEM = "Giove";
+const char d_5[] PROGMEM = "Vener";
+const char d_6[] PROGMEM = "Sabat";
+const char d_7[] PROGMEM = "Domen"; //Sunday
 const char* const dias[] PROGMEM = {d_1, d_2, d_3, d_4, d_5, d_6, d_7};
-const char m_1[] PROGMEM = "Enero";
-const char m_2[] PROGMEM = "Febre";
+const char m_1[] PROGMEM = "Genna"; //January
+const char m_2[] PROGMEM = "Febbr";
 const char m_3[] PROGMEM = "Marzo";
-const char m_4[] PROGMEM = "Abril";
-const char m_5[] PROGMEM = "Mayo ";
-const char m_6[] PROGMEM = "Junio";
-const char m_7[] PROGMEM = "Julio";
+const char m_4[] PROGMEM = "April";
+const char m_5[] PROGMEM = "Maggi";
+const char m_6[] PROGMEM = "Giugn";
+const char m_7[] PROGMEM = "Lugli";
 const char m_8[] PROGMEM = "Agost";
-const char m_9[] PROGMEM = "Septi";
-const char m_10[] PROGMEM = "Octub";
-const char m_11[] PROGMEM = "Novie";
-const char m_12[] PROGMEM = "Dicie";
+const char m_9[] PROGMEM = "Sette";
+const char m_10[] PROGMEM = "Ottob";
+const char m_11[] PROGMEM = "Novem";
+const char m_12[] PROGMEM = "Dicem";
 const char* const meses[] PROGMEM = {m_1, m_2, m_3, m_4, m_5, m_6, m_7, m_8, m_9, m_10, m_11, m_12};
 const char s_0[] PROGMEM = "Aviso: ";
 const char s_1[] PROGMEM = "Sonar en ";
-const char s_2[] PROGMEM = "Activa";
-const char s_3[] PROGMEM = "Inactiva";
+const char s_2[] PROGMEM = "Attiva";
+const char s_3[] PROGMEM = "Inattiva";
 const char s_4[] PROGMEM = "Reloj: ";
 const char s_5[] PROGMEM = "10 min?";
-const char s_6[] PROGMEM = "Si";
+const char s_6[] PROGMEM = "Si";  //Yes
 const char s_7[] PROGMEM = "No";
 const char* const strs[] PROGMEM = {s_0, s_1, s_2, s_3, s_4, s_5, s_6, s_7};
 char bufS[10];
@@ -937,7 +942,7 @@ String splitText(String data, char separator, int index){
 
 bool isHoliday(byte y, byte mo, byte d){
   char* allYears = (char*)(n2s(mo)+n2s(d)).c_str(); // All years the same day
-  if (allYears=="0101" or allYears=="1225" or allYears=="0501" or allYears=="0720" or allYears=="0807")
+  if (allYears=="0101" or allYears=="1225" or allYears=="0501") // or allYears=="0720" or allYears=="0807")     //Change according holydays
     return true;
   char* eachYear = (char*)(n2s(y)+n2s(mo)+n2s(d)).c_str(); // Diff day each year
   for (int i=0;i<201;i++) // festivos.length() -> 201 
